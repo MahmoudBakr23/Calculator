@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
-import Display from './Components/Display';
-import ButtonPanel from './Components/ButtonPanel';
+import '../App.css';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 
 export default class App extends React.Component {
   render() {
