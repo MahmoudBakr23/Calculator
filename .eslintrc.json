@@ -21,7 +21,10 @@
     "no-shadow": "off",
     "arrow-parens": ["error", "as-needed"],
     "no-unused-vars": "off",
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "no-console": "off",
+    "react/prop-types": "off",
+    "class-methods-use-this": "off"
   },
   "ignorePatterns": [
     "dist/",
