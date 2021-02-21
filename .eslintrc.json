@@ -19,7 +19,9 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
-    "arrow-parens": ["error", "as-needed"]
+    "arrow-parens": ["error", "as-needed"],
+    "no-unused-vars": "off",
+    "react/prefer-stateless-function": "off"
   },
   "ignorePatterns": [
     "dist/",
