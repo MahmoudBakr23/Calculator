@@ -4,11 +4,8 @@ function App() {
   return (
     <div className="App">
       <h1 className="header">
-        <small>This is just initial.</small>
-        {' '}
-        Hold on!
+        <small>Milestone 2</small>
       </h1>
-      <code>deployed on Heroku!</code>
     </div>
   );
 }
