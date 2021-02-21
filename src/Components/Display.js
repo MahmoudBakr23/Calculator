@@ -1,6 +1,3 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
 const Display = props => {
   const { result } = props;
   return (
@@ -9,7 +6,7 @@ const Display = props => {
     </div>
   );
 };
-Display.prototypes = {
+Display.defaultProps = {
   result: '0',
 };
 
