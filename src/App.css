@@ -10,3 +10,32 @@ body {
   text-align: center;
   color: yellow;
 }
+
+.Calculator {
+  width: 40%;
+  margin: 4rem auto;
+  background-color: #fff;
+}
+
+.Display {
+  text-align: right;
+  line-height: 6rem;
+  font-size: 4rem;
+  font-family: monospace;
+  padding: 0 1rem;
+  background-color: #777;
+}
+
+/* .ButtonPanel {
+  display: flex;
+  flex-direction: row-reverse;
+} */
+
+.buttons {
+  display: flex;
+}
+
+.Button button {
+  padding: 0.5rem;
+  font-size: 2rem;
+}
