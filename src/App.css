@@ -12,7 +12,7 @@ body {
 }
 
 .Calculator {
-  width: 40%;
+  width: 25%;
   margin: 4rem auto;
   background-color: #fff;
 }
@@ -26,11 +26,26 @@ body {
   background-color: #777;
 }
 
+.ButtonPanel {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
 .buttons {
   display: flex;
 }
 
 .Button button {
   padding: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.group1,
+.group2,
+.group3,
+.group4,
+.group5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
