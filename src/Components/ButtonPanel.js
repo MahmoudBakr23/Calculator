@@ -3,10 +3,10 @@ import Button from './Button';
 const ButtonPanel = () => (
   <div className="ButtonPanel">
     <div className="buttons group1">
-      <Button name="AC" />
       <Button name="+/-" />
       <Button name="%" />
       <Button name="÷" />
+      <Button name="AC" className="ac" />
     </div>
     <div className="buttons group2">
       <Button name="7" />
@@ -27,10 +27,10 @@ const ButtonPanel = () => (
       <Button name="+" />
     </div>
     <div className="buttons group5">
-      <Button name="del" />
+      <Button name="del" className="del" />
       <Button name="0" />
       <Button name="." />
-      <Button name="=" />
+      <Button name="=" className="eq" />
     </div>
   </div>
 );
