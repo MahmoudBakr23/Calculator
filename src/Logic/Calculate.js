@@ -37,5 +37,20 @@ export default function calculate(data, buttonName) {
     next = null;
   } else if (buttonName === 'A' && operation) {
     next = answer;
+  }else if (buttonName === '+/-') {
+    total *= -1;
+    next *= -1;
+    answer *= -1;
+  } else if (buttonName === '%') {
+    total *= 0.01;
+    next *= 0.01;
+  } else if (buttonName === '.') {
+    if (next) {
+      return { total, next: `${next}.` };
+    }
+    if (total) {
+      return { total: `${total}.`, next };
+    }
+    return { total: '0.', next };
   }
 }
