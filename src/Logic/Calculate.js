@@ -52,5 +52,11 @@ export default function calculate(data, buttonName) {
       return { total: `${total}.`, next };
     }
     return { total: '0.', next };
+  } else if (buttonName === 'del') {
+    if (next) {
+      next = (next).slice(0, -1);
+    } else if (total) {
+      total = (total).slice(0, -1);
+    }
   }
 }
