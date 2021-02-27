@@ -42,8 +42,11 @@ export default function calculate(data, buttonName) {
     next *= -1;
     answer *= -1;
   } else if (buttonName === '%') {
-    total *= 0.01;
-    next *= 0.01;
+    if (total && next && operation) {
+      next /= 100;
+    } else {
+      total /= 100;
+    }
   } else if (buttonName === '.') {
     if (next) {
       return { total, next: `${next}.` };
