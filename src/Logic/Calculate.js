@@ -59,4 +59,31 @@ export default function calculate(data, buttonName) {
       total = (total).slice(0, -1);
     }
   }
+  
+  if (total && next && operation && operators.includes(buttonName)) {
+    total = operate(total, next, operation);
+    answer = total;
+    next = null;
+    operation = null;
+  }
+
+  if (operators.includes(buttonName)) {
+    operation = buttonName;
+  } else if (numbers.includes(buttonName) && operation) {
+    if (next) {
+      next += buttonName;
+    } else {
+      next = buttonName;
+    }
+  } else if (numbers.includes(buttonName)) {
+    if (total) {
+      total += buttonName;
+    } else {
+      total = buttonName;
+    }
+  }
+
+  return {
+    total, next, operation, answer,
+  };
 }
