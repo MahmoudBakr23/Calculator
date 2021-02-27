@@ -37,7 +37,7 @@ const ButtonPanel = ({ clickHandler }) => (
   </div>
 );
 
-Button.propTypes = {
+ButtonPanel.propTypes = {
   clickHandler: PropTypes.isRequired,
 };
 
