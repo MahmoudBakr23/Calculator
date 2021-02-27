@@ -11,6 +11,7 @@ const Button = props => {
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   className: PropTypes.string,
+  handler: PropTypes.isRequired,
 };
 Button.defaultProps = {
   className: '',
