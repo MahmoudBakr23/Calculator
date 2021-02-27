@@ -27,5 +27,15 @@ export default function calculate(data, buttonName) {
       operation = null;
       total = null;
     }
+  } else if (buttonName === 'AC') {
+    total = null;
+    next = null;
+    operation = null;
+    answer = null;
+  } else if (buttonName === 'A') {
+    total = answer;
+    next = null;
+  } else if (buttonName === 'A' && operation) {
+    next = answer;
   }
 }
