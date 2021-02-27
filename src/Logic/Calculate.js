@@ -37,7 +37,7 @@ export default function calculate(data, buttonName) {
     next = null;
   } else if (buttonName === 'A' && operation) {
     next = answer;
-  }else if (buttonName === '+/-') {
+  } else if (buttonName === '+/-') {
     total *= -1;
     next *= -1;
     answer *= -1;
@@ -59,7 +59,7 @@ export default function calculate(data, buttonName) {
       total = (total).slice(0, -1);
     }
   }
-  
+
   if (total && next && operation && operators.includes(buttonName)) {
     total = operate(total, next, operation);
     answer = total;
