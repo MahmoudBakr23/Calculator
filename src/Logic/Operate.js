@@ -13,6 +13,8 @@ export default function operate(numberOne, numberTwo, operation) {
       return one.times(two);
     case '÷':
       return one.div(two);
+    case '%':
+      return one.times(0.01);
     default:
       return 0;
   }

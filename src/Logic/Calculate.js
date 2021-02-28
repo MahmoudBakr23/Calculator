@@ -5,7 +5,7 @@ export default function calculate(data, buttonName) {
     total, next, operation, answer,
   } = data;
   const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  const operators = ['+', 'x', '-', '÷'];
+  const operators = ['+', 'x', '-', '÷', '%'];
 
   if (buttonName === '=') {
     if (total && next && operation) {
@@ -42,10 +42,12 @@ export default function calculate(data, buttonName) {
     next *= -1;
     answer *= -1;
   } else if (buttonName === '%') {
-    if (total && next && operation) {
-      next /= 100;
-    } else {
-      total /= 100;
+    operation = '%';
+    if (total && operation) {
+      total = operate(total, 100, operation);
+      operation = null;
+    } else if (total && next && operation) {
+      next = operate(next, 100, operation);
     }
   } else if (buttonName === '.') {
     if (next) {
