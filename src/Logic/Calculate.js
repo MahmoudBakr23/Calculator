@@ -44,10 +44,11 @@ export default function calculate(data, buttonName) {
   } else if (buttonName === '%') {
     operation = '%';
     if (total && operation) {
-      total = operate(total, 100, operation);
+      next = 0;
+      next = operate(total, next, operation);
       operation = null;
     } else if (total && next && operation) {
-      next = operate(next, 100, operation);
+      next = operate(total, next, operation);
     }
   } else if (buttonName === '.') {
     if (next) {
